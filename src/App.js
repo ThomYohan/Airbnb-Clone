@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { HashRouter, ROute, Switch } from 'react-router-dom'
+import { HashRouter, Route, Switch } from 'react-router-dom'
 
 
 import Home from './Components/Home/Home'
@@ -18,7 +18,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/filteredHomes/:city_id" component={FilteredHomes} />
-          <Route path="/unfilteredHomes" component={UnfilteredHomes} />
+          {/* <Route path="/unfilteredHomes" component={UnfilteredHomes} /> */}
           <Route path="/listing/:property_id" component={Listing} />
           <Route path="/newProperty" component={NewProperty} />
           <Route path="/propertyConfirm" component={NewPropConfirm} />
